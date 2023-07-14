@@ -1,10 +1,5 @@
-let lounge = ["Apolo", "Artemis", "Sputnik"];
+ //require() sin la extencion .js
 
-const place = ()=>{
-    return `Campus classrooms are: '${lounge.join(", ")}'`;
-}
-  //exporta la funcion place utilizando module.exports
-  
-module.exports = {
-    place
-}
+const config = require("./module");
+
+console.log(module);
