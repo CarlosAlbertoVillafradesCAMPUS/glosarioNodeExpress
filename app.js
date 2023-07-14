@@ -1,11 +1,10 @@
-// codificacion de caracteres de la entrada
-process.stdin.setEncoding('utf8');
+let lounge = ["Apolo", "Artemis", "Sputnik"];
 
-// Escuchamos la entrada de datos
-process.stdin.on('data', (input)=>{
-    // Quitamos el espaciado cuando accionamos el enter
-    input = input.trim();
-    console.log(`El dato de entra es ${input}`);
-    // termina el proceso
-    process.exit()
-})
+const place = ()=>{
+    return `Campus classrooms are: '${lounge.join(", ")}'`;
+}
+  //exporta la funcion place utilizando module.exports
+  
+module.exports = {
+    place
+}
